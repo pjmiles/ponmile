@@ -88,7 +88,6 @@ h2 {
     text-align: center;
 }
 
-
 .image-resize {
     width: 90%;
     height: 300px;
@@ -122,13 +121,14 @@ p{
 
 /* contact section */
 
-#contact-header {
+#contact {
     background-color: #c9dfd0;
+    display: block;
+    padding: 0;
     margin: 0px 0px 0px 0px;
     width: 100vw;
+    align-items: center;
 }
-
-#contact-header 
 
 
 /* footer section */
@@ -160,47 +160,54 @@ footer {
 
 #btn-submit {
     background-color: lightblue;
-    border: none;
     border: 1px solid #776779;
-    display: block;
+    display: inline-block;
     font-size: 16px;
-    width: 10%;
+    width: 8rem;
     height: 25px;
     border-radius: 8px;
-    outline: none;
     cursor: pointer;
-    margin: 0px 0px 0px 38rem;
+    margin: 0 0 1rem 27rem;
 }
 
 #name {
-    width: 35%;
-    margin: 0px 0px 0px 27rem;
+    display: inline-block;
+    align-items: center;
+    width: 26rem;
+    margin: 0 0 0 18rem;
     font-size: 14px;
 }
 
 #email {
-    width: 35%;
-    margin: 0px 0px 0px 27rem;
+    display: inline-block;
+    align-items: center;
+    width: 26rem;
+    margin: 0 0 0 18rem;
     font-size: 14px;
 }
 
 #email-body {
-    width: 35%;
-    margin: 0px 0px 0px 27rem;
+    display: inline-block;
+    align-items: center;
+    width: 26rem;
+    margin: 0 0 0 18rem;
     font-size: 14px;
     min-height: 150px;
 }
-
 
 #btn-submit:hover {
     background-color: darkblue;
     color: white;
 }
 
-
 /*media querry*/
     
 @media (max-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
     p{
         font-size: 20px;
         color: rgb(95, 50, 50);
@@ -265,26 +272,32 @@ footer {
         font-size: 16px;
     
     }
+   
+    #name {
+        width: 80%;
+        margin: 0px 0px 0px 10rem;
+        font-size: 14px;
+    }
+
+    #email {
+        width: 80%;
+        margin: 0px 0px 0px 10rem;
+        font-size: 14px;
+    }
+
+    #email-body {
+        width: 80%;
+        margin: 0px 0px 0px 10rem;
+        font-size: 14px;
+        min-height: 150px;
+    }
+
+    #btn-submit {
+        margin: 0rem 0rem 0rem 15rem;
+        
+    }
+
 
     
-#name {
-    width: 80%;
-    margin: 0px 0px 0px 10rem;
-    font-size: 14px;
-}
-
-#email {
-    width: 80%;
-    margin: 0px 0px 0px 10rem;
-    font-size: 14px;
-}
-
-#email-body {
-    width: 80%;
-    margin: 0px 0px 0px 10rem;
-    font-size: 14px;
-    min-height: 150px;
-}
-
 
 }
