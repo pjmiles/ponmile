@@ -225,7 +225,7 @@ footer {
     .nav-link{
         font-size: 20px;
         margin: 0;
-        margin-left: 0.5rem;  
+        margin-left: 3.5rem;  
     }
 
     #container {
@@ -260,12 +260,9 @@ footer {
     .copyright-text {
         text-align: center;
         margin-left: 1em;
-        font-size: 16px;
+        font-size: 14px;
     }
 
-    .form {
-    margin-right: 16em;
-    }
 
     input {
         font-size: 16px;
@@ -278,26 +275,26 @@ footer {
     }
    
     #name {
-        width: 80%;
-        margin: 0px 0px 0px 10rem;
+        width: 50%;
+        margin: 0px 0px 0px 15rem;
         font-size: 14px;
     }
 
     #email {
-        width: 80%;
-        margin: 0px 0px 0px 10rem;
+        width: 50%;
+        margin: 0px 0px 0px 15rem;
         font-size: 14px;
     }
 
     #email-body {
-        width: 80%;
-        margin: 0px 0px 0px 10rem;
+        width: 50%;
+        margin: 0px 0px 0px 15rem;
         font-size: 14px;
         min-height: 150px;
     }
 
     #btn-submit {
-        margin: 0rem 0rem 0rem 12rem;
+        margin: 0rem 0rem 0rem 27rem;
         
     }
 
