@@ -10,6 +10,7 @@ body {
     font-size: 32px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: center;
+    width: 100vw;
     border-right: auto;
 }
 
