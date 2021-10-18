@@ -162,36 +162,29 @@ footer {
 #btn-submit {
     background-color: lightblue;
     border: 1px solid #776779;
-    display: inline-block;
     font-size: 16px;
-    width: 8rem;
-    height: 25px;
-    border-radius: 8px;
+    width: 25rem;
+    height: 30px;
+    border-radius: 5px;
     cursor: pointer;
-    margin: 0 0 1rem 18rem;
+    margin-bottom: 1rem;
+    margin-left: 31rem;
+    align-self: center;
 }
 
-#name {
-    display: inline-block;
+#name, #email {
+    display: block;
     align-items: center;
-    width: 26rem;
-    margin: 0 0 0 17rem;
-    font-size: 14px;
-}
-
-#email {
-    display: inline-block;
-    align-items: center;
-    width: 26rem;
-    margin: 0 0 0 17rem;
+    width: 25rem;
+    margin-left: 30rem;
     font-size: 14px;
 }
 
 #email-body {
-    display: inline-block;
+    display: block;
     align-items: center;
     width: 26rem;
-    margin: 0 0 0 17rem;
+    margin-left: 30rem;
     font-size: 14px;
     min-height: 150px;
 }
@@ -201,104 +194,3 @@ footer {
     color: white;
 }
 
-/*media querry*/
-    
-@media (max-width: 1283px){
-    body{
-        margin: 0;
-        padding: 0;
-    }
-
-    p{
-        font-size: 20px;
-        color: rgb(95, 50, 50);
-        margin-left: 2em;
-        margin-right: 2em;
-        padding-bottom: 1em;
-
-}
-
-    nav, #section{
-        width: 100%;
-    }
-
-    .nav-link{
-        font-size: 20px;
-        margin: 0;
-        margin-left: 3.5rem;  
-    }
-
-    #container {
-        width: 100vw;
-        box-sizing: border-box;
-        display: inline;
-        text-align: center;
-        align-items: center;
-        
-    }
-    
-    #contact-top-link a {
-        font-size: 14px;
-        display: inline-block;
-        
-    }
-
-    .skills-image {
-        width: 5%;
-        margin: 20px 3px;
-        display: inline;
-        padding: 3px;
-    }
-
-    .contact-links-bottom a {
-        padding: 2px 2px;
-        font-size: 20px;
-        margin: 50px 8px 8px 8px;
-        float: right;
-    }
-
-    .copyright-text {
-        text-align: center;
-        margin-left: 1em;
-        font-size: 14px;
-    }
-
-
-    input {
-        font-size: 16px;
-        text-align: center;
-    }
-
-    textarea {
-        font-size: 16px;
-    
-    }
-   
-    #name {
-        width: 50%;
-        margin: 0px 0px 0px 15rem;
-        font-size: 14px;
-    }
-
-    #email {
-        width: 50%;
-        margin: 0px 0px 0px 15rem;
-        font-size: 14px;
-    }
-
-    #email-body {
-        width: 50%;
-        margin: 0px 0px 0px 15rem;
-        font-size: 14px;
-        min-height: 150px;
-    }
-
-    #btn-submit {
-        margin: 0rem 0rem 0rem 27rem;
-        
-    }
-
-
-    
-
-}
