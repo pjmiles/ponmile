@@ -20,10 +20,11 @@ html {
 
 /* Reset */
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .about-me {
@@ -36,22 +37,25 @@ html {
 
 /* nav-section starts*/
 
+header {
+    position: fixed;
+}
+
 nav {
     position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
+    height: 80px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
     background-color: var(--bg-color);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-}
+}   
 
-ul{
-    list-style: none;
-}
 
 a{
     text-decoration: none;
@@ -77,12 +81,15 @@ nav a:hover {
 }
 
 nav ul {
-    display: flex;
-    gap: 1.9rem;
+    float: right;
+    margin-right: 10px;
 }
 
 nav ul li {
     font-weight: var(--bold-font);
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
 }
 
 .burger-menu {
@@ -106,22 +113,14 @@ body {
     justify-content: center;
     gap: 2.5rem;
     max-width: 68.75rem;
-    margin: auto;
+
 }
 
-
-.img-responsive {
+.hero-img {
     height: 37.5rem;
     width: 37.5rem;
-    border-radius: 300px;
-    margin-left: 1rem;
-}
-
- .bio {
-    width: 25rem;
-    padding: 0.625rem;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    margin: 5rem 0 0 15rem;
+    border-radius: 1rem; 
 }
 
 .bio h1 {
@@ -135,7 +134,13 @@ body {
 
 .more-about {
     background-color: var(--bg-color);
-    padding: 1rem 6rem;
+    padding: 0.5rem ;
+    border-radius: 6px;
+    width: auto;
+    text-align: center;
+    margin: 2rem 7rem 0 7rem;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
 }
 
 .more-about h2 {
@@ -208,6 +213,7 @@ body {
 .project-container {
     text-align: center;
     width: 21.875rem;
+    min-height: 300px;
     padding: 1rem;
 }
 
@@ -309,5 +315,3 @@ footer {
     margin: 100px 10px 10px 10px;
 
 }
-
-/* respomsive section */

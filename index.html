@@ -1,22 +1,17 @@
     <!DOCTYPE html>
-    <html>
+    <html lang="en" dir="ltr">
     <head>
     <title>Ponmile Adebisi | Software Engineer </title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles.css"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png"/> 
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png"/>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="styles.css"/> 
+        <link rel="stylesheet" type="text/css" href="responsive.css"/> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link href='https://fonts.googleapis.com/css?family=Crushed'>
-        <script src="https://kit.fontawesome.com/f26bb08ab1.js" crossorigin="anonymous"></script>
-
     </head>
 
 <body>
- 
-  <header id="header">
-      <nav id="nav-bar">
+      <nav>
         <h1>PONMILE ADEBISI</h1>
         <ul>
           <li><a class="nav-link" href="#about">About</a></li>
@@ -28,27 +23,26 @@
             <ion-icon class="bars" name="menu-outline"></ion-icon>
           </button>       
       </nav>
-  </header>
+  
  
-<section class="hero" id="about">
-  <img src="images/pjames_pix.jpg" alt="ponmile-adebisi" loading="lazy" class="img-responsive"/>
+<section class="hero">
+  <img src="images/pjames_pix.jpg" alt="ponmile-adebisi" loading="lazy" class="hero-img"/>
   <div class="bio animate__animated animate__shakeX">
-
-<h2 class="bio-title">About Me</h2> 
-    <p class="bio-title">
-      My name is Ponmile Adebisi. I am an aspiring Software Engineer who is creative and innovative. 
-      I love solving problems analytically implementing the right strategies and technics. 
-      I am currently working on brushing up on my HTML, CSS and JavaScript skills as I learn Node.js, Typescript, Python and other front-end and back-end technologies. 
-      My goal is to gain a good understanding of current systems, and to be able to build on that as things inevitably change.
-    </p>
   </div>
 </section>
      
-<section class="more-about">
-  <h2>More Aboute Me</h2>
-    <p>As a technology enthusiast, I started out as a computer hardware engineer after finishing from college, repairing computers, installing operating systems and software. I have fundamental knowledge of software design and development including front-end and back-end technologies.</p>
+<section class="more-about" id="about">
+  <div class="bio animate__animated animate__shakeX">
+  <h2>Aboute Me</h2>
+  <p>
+    My name is Ponmile Adebisi. I am an aspiring Software Engineer who is creative and innovative. 
+    I love solving problems analytically implementing the right strategies and technics. I have fundamental knowledge of software design and development including front-end and back-end technologies. 
+    I am currently working on brushing up on my HTML, CSS and JavaScript skills as I learn Node.js, Typescript, Python and other front-end and back-end technologies. 
+    My goal is to gain a good understanding of current systems, and to be able to build on that as things inevitably change.
+  </p>
     <p>I have over 6 years experience in the manufacturing sector working as a Business developer/Sales Executive, using Data Analysis gathered from market research, competitors report and customer relational management to generate income for the company. I also earned Google Data Analytics Professional Certificate in my curiousity to learn more. </p>
     <p>I am also a music lover which inline with my technical skills, I worked as a Sound Engineer/Production Engineer in the studio producing different genre of music. I love adventure, exercising, cooking, reading and playing piano at my free time.</p>
+  </div>
 </section>
    
 <section class="skills" id="skills">
@@ -160,7 +154,6 @@
  
 </footer>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js" ></script>
   </body>
 </html>
