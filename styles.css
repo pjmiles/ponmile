@@ -23,8 +23,13 @@ html {
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
+}
 
+body {
+    font-family: var(--font-family);
 }
 
 .about-me {
@@ -45,17 +50,21 @@ nav {
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 1;
     height: 80px;
-    width: 100%;
-    display: flex;
+    width: 100%; 
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 3.5rem;
     background-color: var(--bg-color);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }   
 
+label.logo {
+    color: var(--primary-color);
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
 
 a{
     text-decoration: none;
@@ -92,6 +101,23 @@ nav ul li {
     margin: 0 10px;
 }
 
+nav ul li a {
+    padding: 7px 10px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: var(--primary-color);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
 .burger-menu {
     color: var(--primary-color);
     font-size: 2rem;
@@ -99,31 +125,19 @@ nav ul li {
     background-color: transparent;
     cursor: pointer;
     display: none;
-}
+  }
 
-body {
-    font-family: var(--font-family);
-}
 
 /* Bio section starts */
 
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
-
+    max-width: 500px;
+    justify-self: center;
+    justify-items: center;
+    margin-inline: auto;
 }
 
-.hero-img {
-    height: 37.5rem;
-    width: 37.5rem;
-    margin: 5rem 0 0 3rem;
-    border-radius: 1rem; 
-}
-
-.bio h1 {
+.bio   {
     margin-bottom: var(--bottom-margin);
 }
 
@@ -140,7 +154,6 @@ body {
     text-align: center;
     margin: 2rem 7rem 0 7rem;
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-}
 }
 
 .more-about h2 {
@@ -191,6 +204,7 @@ body {
 .projects {
     background-color: var(--bg-color);
     padding: 32px 0;
+    margin: auto;
     margin-top: 2rem;
 }
 
@@ -199,17 +213,17 @@ body {
     height: 60%;
 }
 
-.projects-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .projects-title {
     text-align: center;
     margin-bottom: 1rem;
 }
 
+.projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
 .project-container {
     text-align: center;
     width: 21.875rem;
@@ -230,11 +244,26 @@ body {
 }
 
 .project-card {
-    background-color: #fff;
+    background-color: #fff3;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
+}
+
+/* new section */
+
+.custom-row {
+    background-color: #fcfcfc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    justify-content: flex-end;
 }
 
 /* contact section */
@@ -299,11 +328,9 @@ body {
     cursor: pointer;
 }
 
-
 /* footer section */
 
 footer {
-    background-color: var(--bg-color);
     padding: 1.25rem;
     text-align: center;
     margin: 2rem 0 0;
@@ -312,6 +339,10 @@ footer {
 .contact-links-bottom a {
     padding: 3px 3px;
     font-size: 30px;
-    margin: 100px 10px 10px 10px;
+    margin-bottom: 3rem;
 
+}
+
+.copy p {
+    margin: 2rem 0;
 }

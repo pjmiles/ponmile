@@ -5,28 +5,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" type="text/css" href="styles.css"/> 
-        <link rel="stylesheet" type="text/css" href="responsive.css"/> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link href='https://fonts.googleapis.com/css?family=Crushed'>
+        <script src="https://kit.fontawesome.com/f26bb08ab1.js" crossorigin="anonymous"></script>
+        
     </head>
 
 <body>
       <nav>
-        <h1>PONMILE ADEBISI</h1>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">PONMILE ADEBISI</label>
         <ul>
           <li><a class="nav-link" href="#about">About</a></li>
           <li><a class="nav-link" href="#projects">Works</a></li>
           <li><a class="nav-link" href="#skills">Skills</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul> 
-          <button class="burger-menu" id="burger-menu">
-            <ion-icon class="bars" name="menu-outline"></ion-icon>
-          </button>       
+        </ul>   
       </nav>
   
- 
-<section class="hero">
-  <img src="images/pjames_pix.jpg" alt="ponmile-adebisi" loading="lazy" class="hero-img"/>
+     <section class="hero">
+  <img src="images/pjames_pix.jpg" class="img-thumbnail max-auto d-block" alt="ponmile-adebisi" loading="lazy" />
 </section>
      
 <section class="more-about" id="about">
@@ -61,54 +63,80 @@
 </div>
 </section>
 
-  <section id="projects" class="project-section" >
+<section id="projects" class="projects">
   <h2 class="projects-title">Some of my projects</h2>
-
-      <div class="projects-container">
-      <div class= "project-container project-card">
+ 
+  <div class="container">
+    <div class="row custom-row">
+      <div class="col col-sm-12 col-md-6 col-lg-4">
+        <div class= "project-container project-card">
           <img src="images\tribute_wide.jpg" alt="tribute page" class="project-pix" loading ="lazy"/>
           <h3 class="project-title">Tribute page</h3>
           <p class="project-details">
             A tribute page designed for Kirk Whalum, a Saxophonist who has inspired so many musician.</p>
           <a href="https://codepen.io/pjames1/pen/KKWoxNr" target="_blank" class="project-link">Check it out</a>
+         </div>
       </div>
-      <div class= "project-container project-card">
+      <div class="col col-sm-12 col-md-6 col-lg-4">
+        <div class= "project-container project-card">
           <img src="images\survey_wide.png" alt="tribute page" class="project-pix" loading ="lazy"/>
           <h3 class="project-title">Survey Form</h3>
           <p class="project-details">
             A Survey form for a production unit to collect data and analyse on areas to improve performance.</p>
           <a href="https://codepen.io/pjames1/pen/jOBKjvy" target="_blank" class="project-link">Check it out</a>
       </div>
-      <div class= "project-container project-card">
+      </div>
+      <div class="col col-sm-12 col-md-6 col-lg-4">
+        <div class= "project-container project-card">
           <img src="images/Landing_wide.png" alt="tribute page" class="project-pix" loading ="lazy"/>
           <h3 class="project-title">Landing page</h3>
           <p class="project-details">
             Piano Ecommerce site, created for interested clients to place order and also view how the products works.</p>
           <a href="https://codepen.io/pjames1/pen/dyvgQOW" target="_blank" class="project-link">Check it out</a>
       </div>
-      <div class= "project-container project-card">
+      </div>
+      <div class="col col-sm-12 col-md-6 col-lg-4">
+        <div class= "project-container project-card">
           <img src="images/technical_wide.png" alt="tribute page" class="project-pix" loading ="lazy"/>
           <h3 class="project-title">Technical documentation page</h3>
           <p class="project-details">
             This page was created to put in details an introduction to JavaScript.</p>
           <a href="https://codepen.io/pjames1/pen/abWBNMv" target="_blank" class="project-link">Check it out</a>
       </div>
-      <div class= "project-container project-card">
+      </div>
+      <div class="col col-sm-12 col-md-6 col-lg-4">
+        <div class= "project-container project-card">
           <img src="images/calculator_wide.png" alt="tribute page" class="project-pix" loading ="lazy"/>
           <h3 class="project-title">Online calculator</h3>
           <p class="project-details">
             An online calculator that was built to perform basic calculation.</p>
           <a href="https://calculator-chi-two.vercel.app/" target="_blank" class="project-link">Check it out</a>
       </div>
-      <div class= "project-container project-card">
+      </div>
+      <div class="col col-sm-12 col-md-6 col-lg-4">
+        <div class= "project-container project-card">
+          <img src="images/rate_app.jpg" alt="exchange app" class="project-pix" loading ="lazy"/>
+          <h3 class="project-title">Exchange rate app</h3>
+          <p class="project-details">
+            An Exchange rate application built to convert countries currencies. The back-end will be updated soon.</p>
+          <a href="https://exchange-rate-app-flame.vercel.app/" target="_blank" class="project-link">Check it out</a>
+      </div>
+      </div>
+      <div class="col col-sm-12 col-md-6 col-lg-4">
+        <div class= "project-container project-card">
           <img src="images/kitchen_wide.png" alt="tribute page" class="project-pix" loading ="lazy"/>
           <h3 class="project-title">Food kitchen</h3>
           <p class="project-details">
             An Ecommerce site where you can place order for different kinds of food. Building still in progress.</p>
           <a href="https://food-kitchen-fw2i0ok3b-pjmiles.vercel.app/" target="_blank" class="project-link">Check it out</a>
       </div>
+      </div>
     </div>
-  </section>
+
+  </div>
+</section>
+
+
 
 <section class="contact" id="contact">
   <h2 class="contact-text">Get in touch</h2>
@@ -152,6 +180,15 @@
  
 </footer>
 
-    <script src="script.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<script
+type="module"
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script
+nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="const.js"></script>
+
   </body>
 </html>
