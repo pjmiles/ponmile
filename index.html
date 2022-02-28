@@ -174,7 +174,7 @@
   </div>
 
   <p class="copy">&copy; Copyright 2021 Built with &#x2661; by <a href="https://www.instagram.com/ponmilejames/" target="_blank">Ponmile James</a></p>
- 
+  <div id="root"><h6></h6></div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
@@ -186,6 +186,22 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script
 nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="const.js"></script>
+
+<!--React script!-->
+
+<script src= "https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script src= "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+<script type="text/babel">
+
+  function tick(){
+    const element = (<h5>{new Date().toLocaleTimeString()}</h5>);
+    ReactDOM.render(element, document.getElementById('root'));
+  }
+  setInterval(tick, 1000);
+
+</script>
 
   </body>
 </html>
